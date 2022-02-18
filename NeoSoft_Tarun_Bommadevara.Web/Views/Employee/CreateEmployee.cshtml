@@ -245,7 +245,7 @@
 </form>
 @section Scripts{
     <partial name="_ValidationScriptsPartial"  />
-    <script>radioBtnValue
+    <script>
         $(document).ready(function () {
             if ($("#radioBtnValue").val() == '1') {
                 $("#flexRadioDefault1").attr('checked', true);
@@ -253,7 +253,8 @@
             else {
                 $("#flexRadioDefault2").attr('checked', true);
             }
-            if ($("#checkBoxValue").val() == true) {
+            console.log($("#checkBoxValue").val());
+            if ($("#checkBoxValue").val() == 'True') {
                 $("#flexCheckDefault").attr('checked', true);
             }
             else {
